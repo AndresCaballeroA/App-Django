@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import DetalleCobroEstudiante, DetalleCobroCurso
 
-# Register your models here.
+admin.site.register(DetalleCobroEstudiante)
+admin.site.register(DetalleCobroCurso)
