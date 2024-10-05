@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Reporte
+from .models import DetalleCobroCurso
 
 def generar_reporte(request):
-    # Lógica para generar reportes aquí
-    reportes = Reporte.objects.all()
+    # Lógica para generar reportes sobre los cobros de cursos
+    reportes = DetalleCobroCurso.objects.all()
     return render(request, 'manejador_reportes/listar.html', {'reportes': reportes})
 
 from django.http import HttpResponse
